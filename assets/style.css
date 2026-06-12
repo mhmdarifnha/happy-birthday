@@ -1,0 +1,132 @@
+* {
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: linear-gradient(180deg, #fff7f8, #fffaf4);
+  overflow-x: hidden;
+}
+
+.loading {
+  position: fixed;
+  inset: 0;
+  background: #fff7f8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  transition: 0.8s;
+}
+
+.loader-heart {
+  font-size: 50px;
+  animation: beat 1s infinite;
+}
+
+@keyframes beat {
+  50% {
+    transform: scale(1.2);
+  }
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.fade-up {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.9s ease;
+}
+
+.fade-up.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.float-item {
+  position: fixed;
+  pointer-events: none;
+  z-index: 0;
+  animation: floaty linear infinite;
+  opacity: 0.55;
+}
+
+@keyframes floaty {
+  from {
+    transform: translateY(110vh);
+  }
+  to {
+    transform: translateY(-120px);
+  }
+}
+
+.typing {
+  border-right: 3px solid #ec4899;
+  display: inline-block;
+  word-break: break-word;
+  white-space: normal;
+}
+
+#typingText {
+  max-width: 100%;
+  overflow-wrap: break-word;
+}
+
+.sticker {
+  position: absolute;
+  font-size: 24px;
+}
+
+.check-item {
+  opacity: 0;
+  transform: translateX(-20px);
+}
+
+.check-item.show {
+  animation: checkIn 0.6s forwards;
+}
+
+@keyframes checkIn {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.timeline-item {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: 0.8s;
+}
+
+.timeline-item.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.scrap-border {
+  background: repeating-linear-gradient(
+    45deg,
+    #ffe2eb,
+    #ffe2eb 10px,
+    #fff 10px,
+    #fff 20px
+  );
+  padding: 8px;
+  border-radius: 30px;
+}
+
+.music-btn,
+.replay-fixed {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.hero-bg {
+  background:
+    radial-gradient(circle at top left, #ffdce5, transparent 40%),
+    radial-gradient(circle at top right, #fff0d8, transparent 35%);
+}
