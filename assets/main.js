@@ -114,3 +114,22 @@ for (let x = 0; x < 25; x++) {
 
     floatContainer.appendChild(item);
 }
+
+function sendToWhatsApp() {
+
+    const message =
+        document.getElementById("replyMessage").value;
+
+    const nomor = "6285117505091";
+
+    const text = `${message}`;
+
+    window.open(
+        `https://wa.me/${nomor}?text=${encodeURIComponent(text)}`,
+        "_blank"
+    );
+}
+
+function quickReply(text) {
+    document.getElementById("replyMessage").value = text;
+}

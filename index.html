@@ -101,7 +101,7 @@
 
         <div class="space-y-5 text-lg">
           <div class="check-item flex items-center gap-3">
-            ✅ Bertahan mondok bertahun-tahun
+            ✅ Bertahan mondok
           </div>
 
           <div class="check-item flex items-center gap-3">
@@ -133,19 +133,10 @@
             <div
               class="absolute -left-[17px] bg-pink-400 w-8 h-8 rounded-full flex items-center justify-center"
             >
-              🍹
-            </div>
-            <h3 class="font-semibold">Stok mi sebulan</h3>
-          </div>
-
-          <div class="timeline-item px-6 mb-12 ml-8">
-            <div
-              class="absolute -left-[17px] bg-pink-400 w-8 h-8 rounded-full flex items-center justify-center"
-            >
               🕵️
             </div>
             <h3 class="font-semibold">
-              Misteri justfriend yang belum terpecahkan
+              Misteri justfriend yang berhasil terpecahkan
             </h3>
           </div>
 
@@ -187,8 +178,7 @@
             <br /><br />
             Semoga selalu dikelilingi orang baik dan hal-hal baik.
             <br /><br />
-            Dan semoga suatu hari rasa penasaran tentang identitas justfriend
-            itu hilang 😭
+            Dan semoga semua rencana baikmu dimudahkan satu per satu.
           </p>
         </div>
       </div>
@@ -213,6 +203,54 @@
           class="bg-pink-400 hover:bg-pink-500 text-white px-8 py-4 rounded-full transition hover:scale-105"
         >
           Replay 🎉
+        </button>
+      </div>
+    </section>
+
+    <section class="py-20 px-5 fade-up">
+      <div class="max-w-xl mx-auto glass rounded-3xl p-6">
+        <h2 class="text-3xl font-bold text-center mb-4">Balas Pesan 💌</h2>
+
+        <textarea
+          id="replyMessage"
+          placeholder="Tulis apa aja di sini..."
+          autocapitalize="off"
+          autocomplete="off"
+          autocorrect="off"
+          spellcheck="false"
+          class="w-full h-40 p-4 rounded-2xl border-none outline-none resize-none bg-white/70"
+        ></textarea>
+
+        <p class="text-sm text-gray-500 mt-4 mb-3">Quick Reply 👇</p>
+
+        <div class="flex flex-col gap-2 mb-5">
+          <button
+            onclick="quickReply('makasih ya 😭')"
+            class="self-start bg-white px-4 py-2 rounded-2xl shadow-sm"
+          >
+            makasih ya 😭
+          </button>
+
+          <button
+            onclick="quickReply('lucu banget 😭')"
+            class="self-start bg-white px-4 py-2 rounded-2xl shadow-sm"
+          >
+            lucu banget 😭
+          </button>
+
+          <button
+            onclick="quickReply('aku ketawa baca ini 😭')"
+            class="self-start bg-white px-4 py-2 rounded-2xl shadow-sm"
+          >
+            aku ketawa baca ini 😭
+          </button>
+        </div>
+
+        <button
+          onclick="sendToWhatsApp()"
+          class="w-full bg-pink-400 hover:bg-pink-500 text-white py-3 rounded-2xl transition"
+        >
+          Kirim ke WhatsApp 📩
         </button>
       </div>
     </section>
